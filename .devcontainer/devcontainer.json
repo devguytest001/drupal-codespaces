@@ -13,7 +13,10 @@
 	// Additional image and features
 	"image": "mcr.microsoft.com/devcontainers/universal:latest",
 	"features": {
-		"ghcr.io/ddev/ddev/install-ddev:latest": {}
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+            "version": "latest"
+        },
+        "ghcr.io/ddev/ddev/install-ddev:latest": {}
 	}
 	// "postCreateCommand": "ddev config global --instrumentation-opt-in=true && make"
 }
